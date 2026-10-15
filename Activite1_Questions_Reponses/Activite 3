@@ -1,0 +1,18 @@
+Question 6 — Comparer avec l'activité 1-2
+Dans l'activité 1-2, le programme lit config.txt et utilise lui-même la réflexion. Dans l'activité 1-3, Spring prend en charge la création et l'injection à partir de config.xml.
+Question 7 — Différence entre les trois méthodes:
+-Instanciation manuelle:
+Qui crée les objets ?
+Le code Java
+Où configure-t-on les classes ?
+Dans le code Java
+-Réflexion:
+Qui crée les objets ?
+Le code Java, avec réflexion
+Où configure-t-on les classes ?
+Dans config.txt
+-Spring XML:
+Qui crée les objets ?
+Le conteneur Spring
+Où configure-t-on les classes ?
+Dans config.xml
