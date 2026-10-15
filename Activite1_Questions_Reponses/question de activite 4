@@ -1,0 +1,4 @@
+5. Comment Spring gère-t-il l'injection de dépendances avec les annotations ?
+Spring utilise des annotations comme @Component, @Autowired, @Service et @Repository pour créer les objets et injecter automatiquement les dépendances entre les classes, sans utiliser new manuellement.
+6. Pourquoi cette solution est-elle plus maintenable que XML ?
+Elle réduit la configuration, rend le code plus lisible et facilite la modification ou le remplacement des dépendances.
