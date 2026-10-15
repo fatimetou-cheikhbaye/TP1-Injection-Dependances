@@ -1,0 +1,6 @@
+Question 9 — Comment cette solution illustre-t-elle le couplage faible ?
+Le métier dépend de l'interface IDao plutôt que directement de la classe DaoIMP. On peut remplacer DaoIMP par une autre implémentation de IDao sans devoir modifier le code de MetierIMP, à condition que cette nouvelle implémentation respecte le même contrat.
+Question 10 — Le principe IoC est-il respecté ?
+Il est respecté seulement partiellement, selon la distinction enseignée dans ce TP : la dépendance est injectée de l'extérieur, mais PresentationStatique contrôle toujours la création des objets et leur assemblage.
+Question 11 — Que faut-il modifier pour éviter que la présentation contrôle directement la création des objets ?
+Il faut confier la création et l'assemblage des objets à un mécanisme externe, par exemple une configuration lue dynamiquement, puis à un conteneur IoC comme Spring
