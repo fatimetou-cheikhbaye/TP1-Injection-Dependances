@@ -1,0 +1,7 @@
+Question 7 — Comment cette solution illustre-t-elle l’injection dynamique ?
+Les classes à utiliser sont déterminées à l’exécution à partir de config.txt. La dépendance est injectée par réflexion, sans écrire directement new DaoIMP() ou new MetierIMP() dans cette classe de présentation.
+Question 8 — En quoi se rapproche-t-elle davantage de l’IoC ?
+La création dépend maintenant d’un fichier de configuration. Cependant, c’est toujours PresentationDynamique qui lit le fichier, crée les objets et les relie. Le contrôle n’est donc pas encore entièrement transféré à un conteneur externe.
+Question 9 — Quels sont les avantages et les limites ?
+- Avantage : changer le nom de la classe dans config.txt sans modifier ni recompiler le code Java.
+- Limite : il faut écrire et maintenir soi-même le code de réflexion, et les erreurs de nom de classe ou de méthode peuvent apparaître à l’exécution.
